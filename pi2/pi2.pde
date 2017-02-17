@@ -7,6 +7,8 @@ boolean good = true;
 boolean record = true;
 int startT = 47;
 int stopT = startT + 1;
+int startdate = 16;
+int starttraining = startdate + 3;
 //int startC = 40;
 //int stopC = startC + 10;
 
@@ -65,22 +67,22 @@ void draw() {
     background(0);
   }
   
-  /**if ((d >= 15 && d <= 17) && (h == 9 || h == 16)){
-    if (m >= 49 && m <= 59){
+  /**if ((d >= startdate && d < starttraining) && (h == 9 || h == 16)){
+    if (m >= 35 && m <= 45){
       record();
     }
-    if (m == 50 && s >= 0){
+    if (m == 36 && s >= 0){
       GPIO.digitalWrite(Feeder, false);
     }
-    if (m == 50 && s > 30){
+    if (m == 36 && s > 30){
       GPIO.digitalWrite(Feeder, true);
     }
   }*/
   
-  if ((d >= 16 && d <= 18) && (h == 11 || h == 13)){
-    if (m >= 40 && m <= 50){
-      record();
-    }
+  if ((d >= startdate && d < starttraining) && (h == 11 || h == 13)){
+    //if (m >= 40 && m <= 50){
+      //record();
+    //}
     if (m == 41 && s >= 0){
       GPIO.digitalWrite(Feeder, false);
     }
@@ -90,7 +92,7 @@ void draw() {
   }
   
   
-  if ((d >= 19) && (h == 8|| h == 11|| h == 14|| h == 17)) {
+  if ((d >= starttraining || d < startdate) && (h == 8|| h == 11|| h == 14|| h == 17)) {
     //if (m >= startC && m <= stopC) {
       //record();
     //}
