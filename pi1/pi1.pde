@@ -9,7 +9,7 @@ int startT = 42;
 int stopT = startT + 1;
 int startC = 40;
 int stopC = startC + 10;
-int startdate = 16;
+int startdate = 17;
 int starttraining = startdate +3;
 
 void setup() {
@@ -84,14 +84,6 @@ void draw() {
       record();
     }
   }
-    /*if (m == 41 && s >= 0){
-      GPIO.digitalWrite(Feeder, false);
-    }
-    if (m == 41 && s > 30){
-      GPIO.digitalWrite(Feeder, true);
-    }
-  }*/
-  
   
   if ((d >= starttraining || d < startdate) && (h == 8|| h == 11|| h == 14|| h == 17)) {
     if (m >= startC && m <= stopC) {
