@@ -8,8 +8,8 @@ boolean record = true;
 int startT = 42;
 int stopT = startT + 1;
 int startC = 40;
-int stopC = startC + 10;
-int startdate = 17;
+int stopC = startC + 15;
+int startdate = 1;
 int starttraining = startdate +3;
 
 void setup() {
@@ -67,7 +67,7 @@ void draw() {
     background(0);
   }
   
-  if ((d >= startdate && d < starttraining) && (h == 9 || h == 16)){
+  if (((d >= startdate) && (d < starttraining)) && (h == 9 || h == 16)){
     if (m >= 35 && m <= 45){
       record();
     }
@@ -79,13 +79,13 @@ void draw() {
     }
   }
   
-  if ((d >= startdate && d < starttraining) && (h == 11 || h == 13)){
+  if (((d >= startdate) && (d < starttraining)) && (h == 11 || h == 13)){
     if (m >= 40 && m <= 50){
       record();
     }
   }
   
-  if ((d >= starttraining || d < startdate) && (h == 8|| h == 11|| h == 14|| h == 17)) {
+  if (((d >= starttraining) || (d < startdate)) && (h == 8|| h == 11|| h == 14|| h == 17)) {
     if (m >= startC && m <= stopC) {
       record();
     }
