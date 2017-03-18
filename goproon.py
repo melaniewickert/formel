@@ -4,6 +4,6 @@ print 'is this working'
 camera=GoProHero(password='Tanganyika123')
 print 'is this working 2'
 camera.command('record', 'on')
-time.sleep(600)
+time.sleep(900)
 camera.command('record','off')
 
