@@ -7,8 +7,8 @@ boolean good = true;
 boolean record = true;
 int startT = 42;
 int stopT = startT + 1;
-int startC = 35;
-int stopC = startC + 15;
+int startC = 40;
+int stopC = startC + 10;
 int startdate = 1;
 int starttraining = startdate +3;
 
