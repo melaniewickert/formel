@@ -10,7 +10,7 @@ int startT = 42;
 int stopT = startT + 1;
 int startC = 40;
 int stopC = startC + 10;
-int startdate = 17;
+int startdate = 1;
 int starttraining = startdate +3;
 
 void setup() {
